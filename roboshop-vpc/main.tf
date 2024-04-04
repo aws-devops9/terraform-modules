@@ -1,5 +1,6 @@
 module "roboshop_vpc" {
     source = "../vpc-module"
+    #source = "git::https://github.com/aws-devops9/terraform-vpc-module.git?ref=master"
     # We are parsing the below variables as we rquire these variables for tagging 
     project_name = var.project_name
     environment = var.environment
